@@ -63,15 +63,14 @@ object Kata1{
     }
     valid
   }
+
+  def main (args: Array[String]): Unit ={
+    var a = Kata1.validBraces("{({{()}({}())})}")//true
+    println(a)
+    var b = Kata1.validBraces("({]}{")//false
+    println(b)
+  }
+
 }
 
-var a = Kata1.validBraces("{({{()}({}())})}")//true
-println(a)
-var b = Kata1.validBraces("({]}{")//false
-println(b)
 
-
-
-var a = "{}({})[]"
-a.substring(2,a.length)
-a.lastIndexOf("a")
